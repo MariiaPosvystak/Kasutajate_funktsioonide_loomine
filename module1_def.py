@@ -24,4 +24,29 @@ def is_year_leap(aasta:int)->bool:
     :param int aasta: aasta number
     :rtype: bool tagastab tõeväärtsuses formaadis tulemus
     """
+    if aasta%4==0:
+        v=True
+    else:
+        v=False
+    return v
 
+def square(külg:float)->any:
+    """Ruudu pindala ja ümbermõõt leidmine
+    :param float külg: Ruudu külg
+    :rtype: float tagastab ruudu pindala
+    """
+    S=külg**2
+    P=külg*4
+    d=(2)**(1/2)*külg
+    return S,P,d
+
+def square(külg:float)->any:
+    """Ruudu pindala ja ümbermõõt leidmine
+    :param float külg: Ruudu külg
+    :rtype: float tagastab ruudu pindala
+    """
+    S=külg**2
+    P=külg*4
+    d=(2)**(1/2)*külg
+    s_list=[S,P,d]
+    return s_list
