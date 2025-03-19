@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4973cf20-4409-4241-a759-88b813f7f5e1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Kasutajate_funktsioonide_loomine.py</StartupFile>
+    <StartupFile>module1_def.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

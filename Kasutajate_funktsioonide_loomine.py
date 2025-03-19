@@ -19,3 +19,5 @@ else:
 #square funktsiooni kasutamine
 S,P,d=square(float(input("Sisesta külg: ")))
 print(S,P,d)
+
+#season funktsiooni kasutamine
