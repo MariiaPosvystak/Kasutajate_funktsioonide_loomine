@@ -97,7 +97,7 @@ def bank(aeur:float, years:int)->float:
 #6.1 - Простые числа Написать функцию is_prime, принимающую 1 аргумент — число от 0 до 1000, и возвращающую True, если оно простое, и False - иначе.
 def is_prime(arv:int)->bool:
     """ Primaarvud
-    Tagastab True, kui see on lihtne´ja False, kui 
+    Tagastab True, kui see on lihtne ja False, kui 
     """
     if 0<=arv<1001:
         if arv in [0,1]:
@@ -105,8 +105,12 @@ def is_prime(arv:int)->bool:
         else:
             for i in range(2,arv):
                 if arv%i==0:
-                    v=False
+                    return False
                 else:
-                    v=True
-    return v
-#7
+                    return True
+
+#7 - Написать функцию date, принимающую 3 аргумента — день, месяц и год. Вернуть True, если такая дата есть в нашем календаре, и False иначе.
+def date(day:int, mounth:int, year:int)->bool:
+    """
+    """
+    
