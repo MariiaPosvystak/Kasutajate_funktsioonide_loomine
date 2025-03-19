@@ -23,3 +23,4 @@ from module1_def import *
 #season funktsiooni kasutamine
 v=is_prime(int(input("Sisesta arv: ")))
 print(v)
+
