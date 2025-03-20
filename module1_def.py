@@ -113,5 +113,26 @@ def is_prime(arv:int)->bool:
 def date(day:int, mounth:int, year:int)->bool:
     """
     """
+    if year<1 or mounth<1 or day<1:
+        return False
+    kalender=[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if mounth%4==0:
+        kalender[1]=29
+    return day<=kalender[mounth-1]
 
-    
+#8
+def XOR_uncipher(cipher_string, key)->any:
+    cipher_bytes = cipher_string.encode()
+    key_bytes = key.encode()
+    decoded_bytes = []
+    for i in range(len(cipher_bytes)):
+        decoded_byte = cipher_bytes[i] ^ key_bytes[i % len(key_bytes)]
+        decoded_bytes.append(decoded_byte)
+    return bytes(decoded_bytes).decode(errors='ignore')
+
+# Преобразуем зашифрованную строку в список байтов 
+# Получаем байт ключа
+# Создаем список для восстановленных символов
+# Применяем операцию XOR для каждого байта зашифрованной строки с соответствующим байтом ключа
+# Используем циклический ключ
+# Преобразуем восстановленные байты обратно в строку и возвращаем ее
